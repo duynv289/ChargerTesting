@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txtValueChargingSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLogo"
+        android:layout_centerHorizontal="true"
+        android:text="@string/charging_speed"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_16" />
+
+    <LinearLayout
+        android:id="@+id/linear_charging_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtValueChargingSpeed"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtChargingSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="@dimen/dp_16"
+            android:text="618.24"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="@dimen/dp_16"
+            android:text="@string/ma"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_device_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_charging_speed"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/txtValueDeviceModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/device_model"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/txtDeviceModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="Sony z3"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_capacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_device_model"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/battery_capacity"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/txtCapacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="3100"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="@string/mah"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/linear_capacity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/button_shape_share"
+        android:text="@string/share"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBlueLight"
+        android:textSize="@dimen/sp_16" />
+</RelativeLayout>
+

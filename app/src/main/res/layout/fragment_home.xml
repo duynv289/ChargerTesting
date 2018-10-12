@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/img_gif_tip"
+        android:layout_width="192dp"
+        android:layout_height="192dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_32"
+        android:src="@drawable/tip" />
+
+    <TextView
+        android:id="@+id/txtFirstTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_gif_tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_4"
+        android:text="@string/first_tip_waiting"
+        android:textAlignment="center"
+        android:textColor="@color/colorGray" />
+
+    <TextView
+        android:id="@+id/txtSecondTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFirstTip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="@dimen/dp_4"
+        android:text="@string/second_tip_waiting"
+        android:textAlignment="center"
+        android:textColor="@color/colorGray" />
+
+
+    <RelativeLayout
+        android:id="@+id/relative_button_action"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/button_shape_waiting"
+        android:text="@string/start"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_16">
+
+        <TextView
+            android:id="@+id/txtButtonAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/start"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="65dp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

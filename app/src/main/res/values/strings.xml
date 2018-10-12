@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ChargerTesting</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="testing">Testing</string>
+    <string name="test_history">Test History</string>
+    <string name="charger_testing">Charger Testing</string>
+    <string name="history">History</string>
+    <string name="rate_review">Rate &amp; Review</string>
+    <string name="feedback">Feedback</string>
+    <string name="invite_friend">Invite Friend</string>
+    <string name="first_tip_waiting">Tip: Charging your device then Start Testing.</string>
+    <string name="second_tip_waiting">Battery level should be less than 85% to decrease testing time!</string>
+    <string name="first_tip_running">Tip: Testing process may take 1 - 5 min</string>
+    <string name="second_tip_running">Please wait!</string>
+    <string name="charging_speed">Charging Speed</string>
+    <string name="ma">mA</string>
+    <string name="device_model">Device Model:</string>
+    <string name="battery_capacity">Battery Capacity:</string>
+    <string name="mah">mAh</string>
+    <string name="share">Share</string>
+</resources>
